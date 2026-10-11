@@ -45,7 +45,7 @@ If the matched estimate still moves across reasonable specifications and the pap
 
 The paper's recommended solution is switching methods, not refining PSM. 
 Exact matching on a few covariates followed by PSM, or iterative respecification of the propensity model, does not escape the problem.
-In fact, the former one can even make the paradox arrive sooner.
+In fact, the former can even make the paradox arrive sooner.
 
 ## 3. Evidence
 
@@ -68,7 +68,7 @@ It falls and then rises sharply under PSM, while it declines monotonically under
 In the re-analysis of Finkel, Horowitz, and Rojo-Mendoza (2012) and Nielsen et al. (2011), caliper pruning from the one-to-one PSM solution raises imbalance immediately and keeps raising it. 
 As the authors put it, "the more strict we are in applying PSM, the worse imbalance gets" (p. 448). 
 The authors report similar patterns in more than 20 datasets from work in progress (p. 447).
-Their recommendation is the routine reporting of diagnostic plots like Figure 3.
+Their recommendation is the routine reporting of diagnostic plots like Figure 3 (p.449).
 
 **For (d).** Model dependence is defined as different causal estimates from models that fit the data about equally well (p. 438). 
 A researcher who chooses among estimates partly on the basis of their values is using a biased estimator, even if each candidate is unbiased conditional on its model.
@@ -92,7 +92,7 @@ The question is whether the paper pruned past that point, not whether it used PS
 
 **Partial application:** PSM preceded by exact or coarsened matching on a few covariates. 
 The concern still applies and may be severe (p. 450). 
-If PSM being applied to data from a completely randomized experiment, authors consider this potentially very problematic.
+If PSM is applied to data from a completely randomized experiment, authors consider this potentially very problematic (p.451).
 
 **Does not apply to:** 
 
@@ -103,7 +103,7 @@ If PSM being applied to data from a completely randomized experiment, authors co
 ## 5. What failure looks like
 
 A paper estimates propensity scores with a main-effects logit, performs one-to-one nearest-neighbor matching. 
-It shall supports balance by showing that the propensity score distributions overlap after matching, or by reporting covariate balance for the matched sample without the unmatched baseline. 
+It supports balance by showing that the propensity score distributions overlap after matching, or by reporting covariate balance for the matched sample without the unmatched baseline. 
 It presents a tighter caliper as a robustness check that confirms the result, without showing that imbalance in X fell. 
 It reports one outcome model and does not compare PSM with a method that matches on X directly. 
 A reviewer should ask for an imbalance-versus-pruning plot for PSM against CEM or MDM. 
