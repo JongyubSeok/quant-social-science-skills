@@ -78,7 +78,7 @@ Therefore, matching reduces model dependence only to the extent that it reduces 
 
 **For (e).** Any matching method requires scaling variables by their importance. 
 PSM does not solve this, only making the scaling less transparent (p. 449).
-PSM helps most in so imbalanced data that causal inference is least credible, and does the most damage in well-balanced data (p. 449).
+PSM helps most in so imbalanced data that causal inference is least credible, and can do the most damage in well-balanced data (p. 449).
 Preceding PSM with exact matching on a few covariates "makes applying PSM more dangerous," because the paradox arrives sooner the closer the first step comes to balancing X (p. 450).
 The most important consideration in choosing a method is "ensuring one can match on all of X, so that it is at least possible to approximate a fully blocked randomized experiment" (p. 450).
 The authors advise choosing a method that matches on all of X and encodes prior knowledge, such as Euclidean distance for continuous data or CEM for mixed data (p. 450).
