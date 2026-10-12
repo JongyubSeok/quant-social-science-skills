@@ -14,7 +14,7 @@ Propensity score matching (PSM) collapses the k covariates into one scalar, the 
 The paper shows that this sets PSM's target at a completely randomized experiment. Methods that match on the covariates themselves, such as MDM and CEM, can instead approximate a fully blocked experiment, which has lower imbalance and lower model dependence.
 
 The consequence is more than losing efficiency. Once PSM has pruned enough to approximate complete randomization, the remaining differences in X given the propensity score are invisible to it.
-Further pruning is then effectively random with respect to X, and random pruning increases imbalance.
+Further pruning is then effectively random with respect to X given the propensity score, and random pruning increases imbalance.
 The authors call this the PSM paradox. Tighter calipers and stricter adherence to PSM make imbalance, model dependence, and potential bias worse.
 They show the pattern in simulations and in data from two published studies.
 The critique is about matching on the propensity score. The authors state that it does not extend to other uses of propensity scores, such as weighting, regression adjustment, or stratification.
