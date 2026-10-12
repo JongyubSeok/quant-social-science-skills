@@ -27,7 +27,7 @@ Weighting and regression adjustment using the propensity score are outside the p
 
 **(b) Check whether balance is reported in the space of the covariates and compared with the unmatched data.** 
 
-Overlapping propensity score distributions are not evidence of covariate balance, because equal propensity scores do not imply similar covariate values.
+Overlapping propensity score distributions are not evidence of covariate balance, because equal propensity scores do not imply equal covariate values.
 A balance table for the matched sample alone does not show whether matching improved anything.
 
 **(c) Check whether the paper tightens the caliper, or prunes further, on the assumption that this must improve balance.** 
@@ -59,7 +59,7 @@ Therefore, the simple version is what a reviewer will usually meet.
 
 **For (b).** MDM and CEM have tuning parameters that reach exact matching at $\delta = 0$, but PSM does not.
 PSM approximates only complete randomization and can have higher imbalance (p. 442). 
-The theorem used to justify PSM requires exact matches and conditions on a single model, which is not how researchers work (pp. 442–443). 
+The theorem used to justify PSM requires exact matches and conditions on a single model, which is not how researchers work (p. 442–443). 
 The reverse implication that would make PSM useful is false. As the authors write, "balancing only on $\pi$ does not balance X" (p. 443), and equal estimated scores do not imply equal covariate vectors. 
 
 **For (c).** The paradox mechanism is stated on p. 444. After PSM approximates complete randomization, further pruning is random with respect to X given $\pi$.
